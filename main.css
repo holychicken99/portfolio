@@ -1,0 +1,68 @@
+/* html, body {
+    height: 100%;
+  } */
+body {
+  /* display: flex;
+    flex-direction: column; */
+  overflow: hidden; /* Hide scrollbars */
+}
+
+div.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 25px;
+  bottom: 0px;
+  background-color: #ffffff;
+  border: 1px solid #3f3f3f;
+}
+footer {
+  flex-shrink: 0;
+}
+
+
+.button {
+  bottom: 0px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+p {
+  top: 0px;
+}
+
+div.icon {
+  background-color: rgb(182, 182, 182);
+  border: 2px solid #3f3f3f; 
+  padding-right: 2px;
+}
+div.fixed1 {
+  position: fixed;
+  right: 0;
+  height: 25px;
+  bottom: 0px;
+  padding: 1px;
+}
+div.fixed2 {
+  position: fixed;
+  right: 85px;
+  height: 23px;
+  bottom: 0px;
+}
+
+div.fixed3 {
+  position: fixed;
+  right: 115px;
+  height: 23px;
+  bottom: 0px;
+}
+div.fixed4 {
+  position: fixed;
+  right: 150px;
+  height: 23px;
+  bottom: 0px;
+}
+
+

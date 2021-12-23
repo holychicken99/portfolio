@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c71723a21b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body
+    background="https://i.postimg.cc/V63sFCdY/Best-48-16-Bit-Space-Backgrounds-on-Hip-Wallpaper-16-Bit.jpg"
+  >
+
+
+    <div class="fixed">
+      <button class="home"><i class="fas fa-home">Home</i></button>
+    </div>
+    
+    <div class = "icon">
+
+      <div class="fixed1">
+        <p id="demo"></p>
+    </div>
+      <div class="fixed2">
+       <a> <i class="fas fa-music"></i></button> 
+      </div>
+      <div class="fixed3">
+        <a href="https://gitlab.com/holychicken99"><i class="fab fa-gitlab"></i></a> 
+      </div>
+      <div class="fixed4">
+       <a href ="https://www.linkedin.com/in/akki-singh/"><i class="fab fa-linkedin"></i></a> 
+      </div>
+      
+    </div>
+
+
+    <script>
+
+      var today = new Date()
+      var date =
+        today.getFullYear() +
+        '-' +
+        (today.getMonth() + 1) +
+        '-' +
+        today.getDate()
+      document.getElementById('demo').innerHTML = date
+
+    </script>
+  </body>
+</html>
