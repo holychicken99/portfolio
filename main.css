@@ -11,7 +11,7 @@ div.fixed {
   position: fixed;
   left: 0;
   right: 0;
-  height: 25px;
+  height: 27px;
   bottom: 0px;
   background-color: #ffffff;
   border: 1px solid #3f3f3f;
@@ -29,14 +29,11 @@ footer {
   background-color: #555;
 }
 
-p {
-  top: 0px;
-}
 
 div.icon {
   background-color: rgb(182, 182, 182);
-  border: 2px solid #3f3f3f; 
-  padding-right: 2px;
+  border: 2px solid #000000; 
+  padding-right: 0px;
 }
 div.fixed1 {
   position: fixed;
@@ -64,5 +61,62 @@ div.fixed4 {
   height: 23px;
   bottom: 0px;
 }
+div.fixed5 {
+  position: fixed;
+  right: 180px;
+  height: 23px;
+  bottom: 1px;
+}
+
+div.resume{
+
+position: fixed;
+top:150px;
+left: 40px;
+}
+
+div.resume1{
+position: fixed;
+top:300px;
+left: 40px;
+}
+div.resume2{
+position: fixed;
+top:400px;
+left: 40px;
+}
+
+div.resume3{
+position: fixed;
+top:200px;
+left: 500px;
+}
+div.resume4{
+position: fixed;
+top:600px;
+left: 40px;
+}
+div.resume5{
+position: fixed;
+top:700px;
+left: 300px;
+}
+div.resume6{
+position: fixed;
+top:400px;
+left: 200px;
+}
+div.resume7{
+position: fixed;
+top:800px;
+left: 120px;
+}
+div.resume8{
+position: fixed;
+top:800px;
+right: 120px;
+}
+
+
 
 
