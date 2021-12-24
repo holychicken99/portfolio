@@ -5,7 +5,9 @@ body {
   /* display: flex;
     flex-direction: column; */
   overflow: hidden; /* Hide scrollbars */
+  cursor: url('./assets/cursor.png'), auto;	
 }
+
 
 div.fixed {
   position: fixed;
@@ -16,17 +18,20 @@ div.fixed {
   background-color: #ffffff;
   border: 1px solid #3f3f3f;
 }
-footer {
+
+/* footer {
   flex-shrink: 0;
+} */
+
+
+button.home {
+  padding-right: 1px;
+  border-right: 2px solid #3f3f3f;
+  border-bottom: 2px solid #3f3f3f;
 }
 
-
-.button {
-  bottom: 0px;
-}
-
-.button:hover {
-  background-color: #555;
+button.home:hover {
+  background-color: rgb(201, 201, 201);
 }
 
 
@@ -35,6 +40,7 @@ div.icon {
   border: 2px solid #000000; 
   padding-right: 0px;
 }
+
 div.fixed1 {
   position: fixed;
   right: 0;
