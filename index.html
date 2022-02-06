@@ -1,100 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="./assets/icon.png" />
     <link rel="stylesheet" href="./main.css" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/c71723a21b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
 
-  <body background="https://i.postimg.cc/8zw5mntd/a473c6a9042f8f545d2512e0b87866f6.jpg" >
+    <script src="https://kit.fontawesome.com/c71723a21b.js" crossorigin="anonymous"></script>
+</head>
 
+<body background="https://i.postimg.cc/G2M0YYGY/463238.jpghttps://i.postimg.cc/G2M0YYGY/463238.jpg">
+
+
+    <!-- footer -->
 
     <div class="fixed ">
-      <button class="home "><i class="fas fa-home">&nbsp Home &nbsp</i></button>
-    </div>
-    
-    
-    <div class = "icon">
-
-      <div class="fixed1">
-        <p id="demo"></p>
-    </div>
-      <div class="fixed2">
-       <a> <i class="fas fa-music"></i></button> 
-      </div>
-      <div class="fixed3">
-        <a href="https://gitlab.com/holychicken99"><i class="fab fa-gitlab "></i></a> 
-      </div>
-      <div class="fixed4">
-       <a href ="https://www.linkedin.com/in/akki-singh/"><i class="fab fa-linkedin"></i></a> 
-      </div>
-      <div class="fixed5">
-       <i class="fas fa-wifi"></i> 
-      </div>
-
+        <button onclick="showdiv()" class="home"><i class="fas fa-home">&nbsp Home &nbsp</i></button>
     </div>
 
-    
+    <div class="icon">
 
-    <div class ="resume">
-     <button ><i class="  fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">Files</p>
+        <div class="fixed1">
+            <p id="demo"></p>
+        </div>
+        <div class="fixed2">
+            <a> <i class="fas fa-music"></i></button>
+        </div>
+        <div class="fixed3">
+            <a href="https://gitlab.com/holychicken99"><i class="fab fa-gitlab "></i></a>
+        </div>
+        <div class="fixed4">
+            <a href="https://www.linkedin.com/in/akki-singh/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="fixed5">
+            <button class="wifi_button" id="wifi_button" onclick="showwifi()"><i class="fas fa-wifi"></i>  </button>
+        </div>
+        <div class="fixed6">
+            <a href="https://stackoverflow.com/users/17061999/akki"><i class="fab fa-stack-overflow"></i></a>
+        </div>
+
     </div>
 
-    <div class ="resume1">
-     <button ><i class="fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">Images</p>
+
+    <!-- icons -->
+    <div class="resume">
+        <button onclick="showwin() "><i class="  fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">Files</p>
     </div>
-    <div class ="resume2">
-     <button ><i class="fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">Projects</p>
+
+    <div class="resume1">
+        <button><i class="fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">Images</p>
     </div>
-    <div class ="resume3">
-     <button ><i class="fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">.config</p>
+    <div class="resume2">
+        <button><i class="fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">Projects</p>
     </div>
-    <div class ="resume4">
-     <button ><i class="fas fab fa-chrome fa-4x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">Chrome</p>
+    <div class="resume3">
+        <button><i class="fas fa-folder fa-3x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">.config</p>
     </div>
-    <div class ="resume5">
-     <button ><i class="fas fa-cog fa-2x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">Settings</p>
+    <div class="resume4">
+        <button><i class="fas fab fa-chrome fa-4x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">Chrome</p>
     </div>
-    <div class ="resume6">
-     <button ><i class="fas fa-desktop fa-2x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">This PC</p>
+    <div class="resume5">
+        <button><i class="fas fa-cog fa-2x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">Settings</p>
     </div>
-    <div class ="resume7">
-     <button ><i class="fab fa-discord fa-2x font-sans " style="color:white"></i> </button>
-      <p style="color:white;">Discord</p>
+    <div class="resume6">
+        <button><i class="fas fa-desktop fa-2x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">This PC</p>
     </div>
-    <div class ="resume8">
-      <p class="text-8xl"style="color:white;">5:00 PM</p>
+    <div class="resume7">
+        <button><i class="fab fa-discord fa-2x font-sans " style="color:white"></i> </button>
+        <p style="color:white;">Discord</p>
     </div>
+    <div class="resume8">
+        <p class="text-8xl" style="color:white;">5:00 PM</p>
+    </div>
+
+
+    <!-- popup window -->
+
+    <div class="files_icon_window " id="files_icon_window">
+        <button onclick="close_file_win()" style="color:rgb(52, 53, 42);position:absolute;right: 5px;"> <i  class=" fas fa-times" > </i>  </button>
+    </div>
+
+    <div class="menu_bar" id="menu_bar">
+        <table class="table-fixed">
+            <thead>
+                <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                    <td>Malcolm Lockyer</td>
+                    <td>1961</td>
+                </tr>
+                <tr>
+                    <td>Witchy Woman</td>
+                    <td>The Eagles</td>
+                    <td>1972</td>
+                </tr>
+                <tr>
+                    <td>Shining Star</td>
+                    <td>Earth, Wind, and Fire</td>
+                    <td>1975</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class=" wifi_bar" id="wifi_bar">
+    </div>
+
+
 
 
     <script>
+        var today = new Date()
+        var date =
+            today.getFullYear() +
+            '-' +
+            (today.getMonth() + 1) +
+            '-' +
+            today.getDate()
+        document.getElementById('demo').innerHTML = date;
 
-      var today = new Date()
-      var date =
-        today.getFullYear() +
-        '-' +
-        (today.getMonth() + 1) +
-        '-' +
-        today.getDate()
-      document.getElementById('demo').innerHTML = date
+        var statediv = 1;
 
+        function showdiv() {
+            if (statediv == 1) {
+                var elem = document.getElementById('menu_bar');
+                elem.style.visibility = 'visible';
+                statediv = 0;
+            } else {
+                var elem = document.getElementById('menu_bar');
+                elem.style.visibility = 'hidden';
+                statediv = 1;
+            }
+        }
+
+        var statewifi = 1;
+
+        function showwifi() {
+            if (statewifi == 1) {
+                var elem = document.getElementById('wifi_bar');
+                elem.style.visibility = 'visible';
+                statewifi = 0;
+            } else {
+                var elem = document.getElementById('wifi_bar');
+                elem.style.visibility = 'hidden';
+                statewifi = 1;
+            }
+
+        }
+
+
+
+        // fn to show file window
+
+        var stateFiles_Icon_window = 1;
+
+        function showwin() {
+            if (stateFiles_Icon_window == 1) {
+                var elem = document.getElementById('files_icon_window');
+                elem.style.visibility = 'visible';
+                stateFiles_Icon_window = 0;
+            }
+
+        }
+        // fn to close the open window
+        function close_file_win() {
+            var elem = document.getElementById('files_icon_window');
+            elem.style.visibility = 'hidden';
+            stateFiles_Icon_window = 1;
+        }
+
+
+
+
+        // make the element visible draggable
+
+        dragElement(document.getElementById("files_icon_window"));
+
+        function dragElement(elmnt) {
+            var pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+                // if present, the header is where you move the DIV from:
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+                // otherwise, move the DIV from anywhere inside the DIV:
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                // stop moving when mouse button is released:
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+
+        const wifiName = require('wifi-name');
+
+        wifiName().then(name => {
+
+            //=> 'wu-tang lan'
+        });
     </script>
-  </body>
+</body>
+
 </html>

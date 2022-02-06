@@ -1,128 +1,190 @@
 /* html, body {
     height: 100%;
   } */
-body {
-  /* display: flex;
-    flex-direction: column; */
-  overflow: hidden; /* Hide scrollbars */
-  cursor: url('./assets/cursor.png'), auto;	
-}
 
+body {
+    overflow: hidden;
+    cursor: url('./assets/cursor.png'), auto;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 div.fixed {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 27px;
-  bottom: 0px;
-  background-color: #ffffff;
-  border: 1px solid #3f3f3f;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 27px;
+    bottom: 0px;
+    background-color: #afae9c;
+    border: 1px solid #afae9c;
 }
+
 
 /* footer {
   flex-shrink: 0;
 } */
 
-
 button.home {
-  padding-right: 1px;
-  border-right: 2px solid #3f3f3f;
-  border-bottom: 2px solid #3f3f3f;
+    padding-right: 1px;
+    background: #252521;
+    color: #afae9c;
+    border-right: 2px solid #afae9c;
+    border-radius: 2px;
+    border-bottom: 2px solid #252521;
+    border-top: 2px solid #252521;
 }
 
 button.home:hover {
-  background-color: rgb(201, 201, 201);
+    background-color: #1b1b19;
 }
 
-
 div.icon {
-  background-color: rgb(182, 182, 182);
-  border: 2px solid #000000; 
-  padding-right: 0px;
+    background-color: rgb(182, 182, 182);
+    border: 2px solid #000000;
+    padding-right: 0px;
 }
 
 div.fixed1 {
-  position: fixed;
-  right: 0;
-  height: 25px;
-  bottom: 0px;
-  padding: 1px;
+    position: fixed;
+    right: 0;
+    height: 25px;
+    bottom: 0px;
+    padding: 1px;
 }
+
 div.fixed2 {
-  position: fixed;
-  right: 85px;
-  height: 23px;
-  bottom: 0px;
+    position: fixed;
+    right: 85px;
+    height: 23px;
+    bottom: 0px;
 }
 
 div.fixed3 {
-  position: fixed;
-  right: 115px;
-  height: 23px;
-  bottom: 0px;
+    position: fixed;
+    right: 115px;
+    height: 23px;
+    bottom: 0px;
 }
+
 div.fixed4 {
-  position: fixed;
-  right: 150px;
-  height: 23px;
-  bottom: 0px;
+    position: fixed;
+    right: 150px;
+    height: 23px;
+    bottom: 0px;
 }
+
 div.fixed5 {
-  position: fixed;
-  right: 180px;
-  height: 23px;
-  bottom: 1px;
+    position: fixed;
+    right: 210px;
+    height: 23px;
+    bottom: 1px;
 }
 
-div.resume{
-
-position: fixed;
-top:150px;
-left: 40px;
+div.fixed6 {
+    position: fixed;
+    right: 180px;
+    height: 23px;
+    bottom: 1px;
 }
 
-div.resume1{
-position: fixed;
-top:300px;
-left: 40px;
-}
-div.resume2{
-position: fixed;
-top:400px;
-left: 40px;
+div.resume {
+    position: fixed;
+    top: 150px;
+    left: 40px;
 }
 
-div.resume3{
-position: fixed;
-top:200px;
-left: 500px;
-}
-div.resume4{
-position: fixed;
-top:600px;
-left: 40px;
-}
-div.resume5{
-position: fixed;
-top:700px;
-left: 300px;
-}
-div.resume6{
-position: fixed;
-top:400px;
-left: 200px;
-}
-div.resume7{
-position: fixed;
-top:800px;
-left: 120px;
-}
-div.resume8{
-position: fixed;
-top:800px;
-right: 120px;
+div.resume1 {
+    position: fixed;
+    top: 300px;
+    left: 40px;
 }
 
+div.resume2 {
+    position: fixed;
+    top: 400px;
+    left: 40px;
+}
 
+div.resume3 {
+    position: fixed;
+    top: 200px;
+    left: 500px;
+}
 
+div.resume4 {
+    position: fixed;
+    top: 600px;
+    left: 40px;
+}
 
+div.resume5 {
+    position: fixed;
+    top: 700px;
+    left: 300px;
+}
+
+div.resume6 {
+    position: fixed;
+    top: 400px;
+    left: 200px;
+}
+
+div.resume7 {
+    position: fixed;
+    top: 800px;
+    left: 120px;
+}
+
+div.resume8 {
+    position: fixed;
+    top: 800px;
+    right: 120px;
+}
+
+div.menu_bar {
+    position: fixed;
+    left: 0;
+    right: 80%;
+    height: 50%;
+    bottom: 27px;
+    background-color: #c2c2ad;
+    border: 1px solid #3f3f3f;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+div.wifi_bar {
+    position: fixed;
+    left: 80%;
+    right: 0%;
+    height: 20%;
+    bottom: 27px;
+    background-color: #c2c2ad;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+div.files_icon_window {
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    bottom: 30%;
+    right: 30%;
+    background-color: #c2c2ad;
+    visibility: hidden;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+2
